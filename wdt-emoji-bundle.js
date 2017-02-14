@@ -605,13 +605,13 @@
     function check() {
       var scrollTop = wdtEmojiBundle.scroller.scrollTop;
 
-      if (hasClass(el, 'sticky') && scrollTop < elTop) {
+      if (hasClass(el, 'sticky') && scrollTop < (elTop - 30)) {
 
         removeClass(el, 'sticky');
         css(el, {top: null});
         css(el.parentNode, {'padding-top': null});
 
-      } else if (scrollTop > elTop && !hasClass(el, 'sticky')) {
+      } else if (scrollTop > (elTop - 30) && !hasClass(el, 'sticky')) {
 
         var stickers = document.querySelectorAll('.wdt-emoji-section h3');
         if (stickers.length) {
@@ -624,7 +624,7 @@
 
         addClass(el, 'sticky');
         css(el, {'top': tabHeaderHeight + 'px'});
-        css(el.parentNode, {'padding-top': el.getBoundingClientRect().height + 'px'});
+        //css(el.parentNode, {'padding-top': el.getBoundingClientRect().height + 'px'});
 
         wdtEmojiBundle.setActiveTab(el.dataset.emojiGroup);
       }
