@@ -22,8 +22,8 @@
     pickerColors : ['green', 'pink', 'yellow', 'blue', 'gray'],
     textMode     : true,
     sectionOrders: {
-      'Recent'  : 10,
-      'Custom'  : 9,
+      //'Recent'  : 10,
+      //'Custom'  : 9,
       'People'  : 8,
       'Nature'  : 7,
       'Foods'   : 6,
@@ -77,16 +77,17 @@
 
     document.querySelector('body').dataset.wdtEmojiBundle = wdtEmojiBundle.defaults.emojiType;
 
-    self.popup.querySelector('[data-group-name="Recent"]').innerHTML = self.emoji.replace_colons(':clock3:');
-    self.popup.querySelector('[data-group-name="People"]').innerHTML = self.emoji.replace_colons(':sunglasses:');
-    self.popup.querySelector('[data-group-name="Nature"]').innerHTML = self.emoji.replace_colons(':shamrock:');
-    self.popup.querySelector('[data-group-name="Foods"]').innerHTML = self.emoji.replace_colons(':pizza:');
-    self.popup.querySelector('[data-group-name="Activity"]').innerHTML = self.emoji.replace_colons(':football:');
-    self.popup.querySelector('[data-group-name="Places"]').innerHTML = self.emoji.replace_colons(':airplane:');
-    self.popup.querySelector('[data-group-name="Objects"]').innerHTML = self.emoji.replace_colons(':bulb:');
-    self.popup.querySelector('[data-group-name="Symbols"]').innerHTML = self.emoji.replace_colons(':heart:');
-    self.popup.querySelector('[data-group-name="Flags"]').innerHTML = self.emoji.replace_colons(':waving_white_flag:');
-    self.popup.querySelector('[data-group-name="Custom"]').innerHTML = self.emoji.replace_colons(':dark_sunglasses:');
+    // KAM commenting out these lines to support custom tabs
+    //self.popup.querySelector('[data-group-name="Recent"]').innerHTML = self.emoji.replace_colons(':clock3:');
+    //self.popup.querySelector('[data-group-name="People"]').innerHTML = self.emoji.replace_colons(':sunglasses:');
+    //self.popup.querySelector('[data-group-name="Nature"]').innerHTML = self.emoji.replace_colons(':shamrock:');
+    //self.popup.querySelector('[data-group-name="Foods"]').innerHTML = self.emoji.replace_colons(':pizza:');
+    //self.popup.querySelector('[data-group-name="Activity"]').innerHTML = self.emoji.replace_colons(':football:');
+    //self.popup.querySelector('[data-group-name="Places"]').innerHTML = self.emoji.replace_colons(':airplane:');
+    //self.popup.querySelector('[data-group-name="Objects"]').innerHTML = self.emoji.replace_colons(':bulb:');
+    //self.popup.querySelector('[data-group-name="Symbols"]').innerHTML = self.emoji.replace_colons(':heart:');
+    //self.popup.querySelector('[data-group-name="Flags"]').innerHTML = self.emoji.replace_colons(':waving_white_flag:');
+    //self.popup.querySelector('[data-group-name="Custom"]').innerHTML = self.emoji.replace_colons(':dark_sunglasses:');
 
     // a trick for contenteditable blur range clear
     self.ranges = {};
