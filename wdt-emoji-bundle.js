@@ -599,7 +599,7 @@
 
     var scrollerRect = wdtEmojiBundle.scroller.getBoundingClientRect(),
       elTop = el.getBoundingClientRect().top - scrollerRect.top,
-      tabHeaderHeight = wdtEmojiBundle.popup.querySelector('#wdt-emoji-menu-header').getBoundingClientRect().height;
+      tabHeaderHeight = wdtEmojiBundle.popup.querySelector('#wdt-emoji-menu-header').getBoundingClientRect().height+1;
 
     wdtEmojiBundle.scroller.addEventListener("scroll", check);
 
