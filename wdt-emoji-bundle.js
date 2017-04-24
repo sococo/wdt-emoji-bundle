@@ -380,7 +380,7 @@
   wdtEmojiBundle.close = function () {
     // KAM 4/11/17 Adding in set active tab and removing the sticky content
     // when the picker is closed to fix ROK-3501
-    wdtEmojiBundle.setActiveTab('Recent');
+    wdtEmojiBundle.setActiveTab('People');
 
     var stickers = document.querySelectorAll('.wdt-emoji-section h3');
     if (stickers.length) {
